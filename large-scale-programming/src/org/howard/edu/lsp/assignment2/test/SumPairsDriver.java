@@ -34,8 +34,9 @@ public class SumPairsDriver {
 		 */
 		SumPairs test1 = new SumPairs();
 		int[] input_1 = {5, 5, 15, 10};
-		System.out.println("INPUT: " +  Arrays.toString(input_1));
-		System.out.println("OUTPUT: " + test1.findSumPairs(input_1, 15).toString() + "\n");
+		int target_1 = 15;
+		System.out.println("INPUT: " +  Arrays.toString(input_1) + ", TARGET: " + target_1);
+		System.out.println("OUTPUT: " + test1.findSumPairs(input_1, target_1).toString() + "\n");
 		
 		
 		/**
@@ -44,8 +45,9 @@ public class SumPairsDriver {
 		 */
 		SumPairs test2 = new SumPairs();
 		int[] input_2 = {1, 2, 3, 4, 5, 6};
-		System.out.println("INPUT: " +  Arrays.toString(input_2));
-		System.out.println("OUTPUT: " + test2.findSumPairs(input_2, 6).toString() + "\n");
+		int target_2 = 6;
+		System.out.println("INPUT: " +  Arrays.toString(input_2) + ", TARGET: " + target_2);
+		System.out.println("OUTPUT: " + test2.findSumPairs(input_2, target_2).toString() + "\n");
 		
 		
 		/**
@@ -55,8 +57,9 @@ public class SumPairsDriver {
 		 */
 		SumPairs test3 = new SumPairs();
 		int[]  input_3= {};
-		System.out.println("INPUT: " +  Arrays.toString(input_3));
-		System.out.println("OUTPUT: " + test3.findSumPairs(input_3, 8).toString() + "\n");
+		int target_3 = 8;
+		System.out.println("INPUT: " +  Arrays.toString(input_3) + ", TARGET: " + target_3);
+		System.out.println("OUTPUT: " + test3.findSumPairs(input_3, target_3).toString() + "\n");
 		
 		
 		/**
@@ -67,8 +70,9 @@ public class SumPairsDriver {
 		 */
 		SumPairs test4 = new SumPairs();
 		int[] input_4 = {1, 2, 3};
-		System.out.println("INPUT: " +  Arrays.toString(input_4));
-		System.out.println("OUTPUT: " + test4.findSumPairs(input_4, 7).toString() + "\n");
+		int target_4 = 7;
+		System.out.println("INPUT: " +  Arrays.toString(input_4) + ", TARGET: " + target_4);
+		System.out.println("OUTPUT: " + test4.findSumPairs(input_4, target_4).toString() + "\n");
 		
 		
 		/**
@@ -78,8 +82,33 @@ public class SumPairsDriver {
 		 */
 		SumPairs test5 = new SumPairs();
 		int[] input_5 = {20, 20, 20};
-		System.out.println("INPUT: " +  Arrays.toString(input_5));
-		System.out.println("OUTPUT: " + test5.findSumPairs(input_5, 20).toString() + "\n");
+		int target_5 = 20;
+		System.out.println("INPUT: " +  Arrays.toString(input_5) + ", TARGET: " + target_5);
+		System.out.println("OUTPUT: " + test5.findSumPairs(input_5, target_5).toString() + "\n");
+		
+		
+		/**
+		 * Test Case 6: Custom test case where negative values as passed into the input
+		 * Works as predicted:
+		 * Combinations of negative values that sum with positive to the target value are returned
+		 */
+		SumPairs test6 = new SumPairs();
+		int[] input_6 = {-5, 15, -5, -5};
+		int target_6 = 10;
+		System.out.println("INPUT: " +  Arrays.toString(input_6) + ", TARGET: " + target_6);
+		System.out.println("OUTPUT: " + test6.findSumPairs(input_6, target_6).toString() + "\n");
+		
+		
+		/**
+		 * Test Case 7: Custom test case where the target value is negative.
+		 * Works as predicted:
+		 * Due to algorithm used it does not work for negative target values
+		 */
+		SumPairs test7 = new SumPairs();
+		int[] input_7 = {-8, -8, 8, 8, 9};
+		int target_7 = -16;
+		System.out.println("INPUT: " +  Arrays.toString(input_7) + ", TARGET: " + target_7);
+		System.out.println("OUTPUT: " + test7.findSumPairs(input_7, target_7).toString() + "\n");
 	}
 
 }
