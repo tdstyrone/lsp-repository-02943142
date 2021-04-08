@@ -1,17 +1,17 @@
 package org.howard.edu.lsp.assignment6.junit;
 
 import static org.junit.jupiter.api.Assertions.*;
-import org.howard.edu.lsp.assignment4.implementation.IntegerSet;
-import org.howard.edu.lsp.assignment4.implementation.IntegerSetException;
+import org.howard.edu.lsp.assignment6.integerset.IntegerSet;
+import org.howard.edu.lsp.assignment6.integerset.IntegerSetException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
 public class IntegerSetTest {
 	
-	private final IntegerSet test_set1 = new IntegerSet();
-	private final IntegerSet test_set2 = new IntegerSet();
-	private final IntegerSet test_set3 = new IntegerSet();
+	IntegerSet test_set1 = new IntegerSet();
+	IntegerSet test_set2 = new IntegerSet();
+    IntegerSet test_set3 = new IntegerSet();
 	
 	
 	@Test
